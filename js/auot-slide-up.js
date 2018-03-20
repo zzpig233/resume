@@ -3,9 +3,10 @@
     for (let i = 0; i < specialTags.length; i++) {
         specialTags[i].classList.add('offset')
     }
-    setTimeout(function () {
-        findClosestAndRemoveOffset()
-    }, 500)
+    // setTimeout(function () {
+    //     findClosestAndRemoveOffset()
+    // }, 500)
+    findClosestAndRemoveOffset()
     window.addEventListener('scroll', function (x) {
         findClosestAndRemoveOffset()
     })
@@ -19,6 +20,7 @@
         for (let i = 1; i < specialTags.length; i++) {
             if (Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)) {
                 minIndex = i
+                console.log(minIndex)
             }
         }
         // minIndex就是里窗口顶部最近的元素

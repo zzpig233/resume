@@ -45,9 +45,7 @@
             this.model.fetch()
                 .then(
                     (messages) => {
-                        console.log(messages)
                         let array = messages.map((item) => item.attributes)
-                        console.log(array)
                         array.forEach(function (item) {
                             let li = document.createElement('li')
                             li.innerText = `${item.name}：${item.content}`

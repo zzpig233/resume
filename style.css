@@ -24,7 +24,7 @@ body{
     outline: 10px solid red;
 }
 [data-x].offset{
-    transform: translateY(100px);
+    transform: translateY(80px);
 }
 [data-x]{
     transform: translateY(0);
@@ -323,7 +323,7 @@ section.skills.offset .progress{
     transition: 1s all;
 }
 .portfolio{
-    margin-bottom: 200px;
+    margin-bottom: 64px;
     width: 720px;
 }
 .portfolio > h2{
