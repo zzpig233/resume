@@ -279,7 +279,7 @@ body{
     text-align: center;
     
 }
-.skills >h2{
+.skills >h2 ,section.message>h2{
     text-align: center;
     margin-top: 45px;
     font-size: 34px;
@@ -389,4 +389,15 @@ section.portfolio > nav .bar.state-3 .barSlider{
 .jobs> .small2 > img{
     float: right;
     margin-top: 27px;
+}
+
+
+section.message > ol{
+    max-width: 650px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+}
+section.message > ol >li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
 }

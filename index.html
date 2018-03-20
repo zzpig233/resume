@@ -20,7 +20,7 @@
             overflow: hidden;
         }
 
-        .site-welcome {
+        /* .site-welcome {
             display: none;
             position: fixed;
             top: 0;
@@ -35,13 +35,13 @@
 
         .site-welcome.active {
             display: flex;
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <div id="siteWelcome" class="site-welcome active">
-        <div class="loading"></div>
+    <!-- <div id="siteWelcome" class="site-welcome active">
+        <div class="loading"></div> -->
     </div>
     <div id="topNavBar" class="topNavBar clearfix">
         <div class="nav_gauge clearfix">
@@ -275,16 +275,28 @@
             </div>
         </div> -->
         </div>
-        <script src="./js/init-swiper.js"></script>
-        <script src="./js/auot-slide-up.js"></script>
-        <script src="./js/sticky-topbar.js"></script>
-        <script src="./js/smoothly-navigation.js"></script>
     </section>
-    <script>
+    <section class="message">
+        <h2>留言</h2>
+        <ol id="messageList"></ol>
+        <form id="postMessageForm" style="width: 650px; margin: 50px auto;">
+            <label for="">姓名</label>
+            <input type="text" name="name">
+            <label for="">内容</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+    <!-- <script>
         setTimeout(function () {
             siteWelcome.classList.remove('active')
         }, 500)      
-    </script>
+    </script> -->
 </body>
-
+<script src="//cdn1.lncld.net/static/js/3.6.0/av-min.js"></script>
+<script src="./js/init-swiper.js"></script>
+<script src="./js/auot-slide-up.js"></script>
+<script src="./js/sticky-topbar.js"></script>
+<script src="./js/smoothly-navigation.js"></script>
+<script src="./js/message.js"></script>
 </html>
